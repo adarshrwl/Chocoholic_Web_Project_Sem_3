@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+.nav-items a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    border: #333 2px solid;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #E9ECEF;
+}
+
+.welcome-box {
+    padding: 20px;
+    text-align: center;
+    border: #333 2px solid;
+    border-radius: 10px;
+}
+
+.welcome-box h1 {
+    color: hwb(0 0% 100%);
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background-image: url(../images/contactus.jpg);
+    background-size: cover;
+    height: 60.7vh;
+}
+
+.box {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.box h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.box p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.box a.Manage-link {
+    padding: 10px 20px;
+    background-color: #a0a0c0;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.box a.Manage-link:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    border: #333 2px solid;
+}
