@@ -34,10 +34,14 @@
     <tr th:each="category, iStat : ${categories}">
       <th scope="row" th:text="${iStat.index + 1}">1</th>
       <td th:text="${category.name}">Larry</td>
-      <td><a th:href="@{/admin/categories/delete/{id}(id=${category.id})}"
-             class="btn danger-btn">Delete</a></td>
-      <td><a th:href="@{/admin/categories/update/{id}(id=${category.id})}"
-             class="btn warning-btn">Update</a></td>
+      <td>
+        <form th:action="@{/admin/categories/delete/{id}(id=${category.id})}" method="post">
+          <button type="submit" class="btn danger-btn">Delete</button>
+        </form>
+      </td>
+      <td>
+        <a th:href="@{/admin/categories/update/{id}(id=${category.id})}" class="btn warning-btn">Update</a>
+      </td>
     </tr>
     </tbody>
   </table>
