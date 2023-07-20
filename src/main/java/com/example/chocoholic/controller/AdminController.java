@@ -1,6 +1,8 @@
 package com.example.chocoholic.controller;
+import com.example.chocoholic.dto.productDTO;
 import com.example.chocoholic.model.Category;
 import com.example.chocoholic.service.CategoryService;
+import com.example.chocoholic.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +17,8 @@ import java.util.Optional;
 public class AdminController {
     @Autowired
     CategoryService categoryService;
+    @Autowired
+    ProductService productService;
 
     @GetMapping("/admin")
     public String adminHome(){
@@ -56,6 +60,16 @@ public class AdminController {
     }
 
     //    -------------------------------Product Section-------------------------------
-
+    @GetMapping ("/admin/product")
+    public String getProdducts(Model model) {
+        model.addAttribute("products",productService.getAllProduct());
+        return "product";
+    }
+    @GetMapping ("/admin/product/add")
+    public String addProducts(Model model) {
+        model.addAttribute("productDTO",new productDTO());
+        model.addAttribute("categories",categoryService.getAllCategory());
+        return "productAdd";
+    }
 
 }
