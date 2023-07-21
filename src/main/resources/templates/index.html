@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocoholic</title>
+    <link th:href="@{/css/index.css}" href="../static/css/index.css">
 </head>
+
 <body>
-HEllo
+<section class="header">
+    <nav>
+        <a href="index.html"><img th:src="@{/images/logo.png}"  src="../static/images/logo.png"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="Pages/Login.html">Login/Register</a></li>
+                <li><a href="">Buy Now</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="text-box">
+        <h1>
+            World's Best Chocolates
+        </h1>
+        <p>
+
+            Unleash Your Chocoholic Obsession and Dive into a Cocoa Wonderland! Prepare to be Enchanted by Decadent
+            Delights and Lost in a Chocolate Paradise,<br> Where Every Bite is Pure Bliss.
+        </p>
+        <a href="" class="hero-btn">Buy Now</a>
+    </div>
+</section>
+
+<!-- --------Chcoclate types--------------- -->
+<section class="types">
+    <h1>
+        Chocolates We Offfer
+    </h1>
+    <p>Indulge in Divine Chocolates. Pure Bliss Awaits.</p>
+    <div class="row">
+        <div class="type-col">
+            <h3>Dark Chocolate</h3>
+            <p>This type of chocolate contains a higher percentage of cocoa solids and a lower amount of sugar
+                compared to other types. It typically has a more intense and slightly bitter flavor profile. Dark
+                chocolate is known for its potential health benefits due to its higher cocoa content.</p>
+        </div>
+        <div class="type-col">
+            <h3>Milk Chocolate</h3>
+            <p> Milk chocolate is made by adding milk powder or condensed milk to the chocolate mixture. It has a
+                creamy and sweet taste, thanks to the added dairy components. Milk chocolate is generally milder in
+                flavor compared to dark chocolate and is a popular choice for candy bars and desserts.</p>
+        </div>
+        <div class="type-col">
+            <h3>White Chocolate</h3>
+            <p>White chocolate is technically not a true chocolate because it does not contain cocoa solids.
+                Instead, it is made from cocoa butter, sugar, and milk solids. It has a smooth, buttery texture and
+                a sweet flavor with hints of vanilla. White chocolate is often used in confectionery and baking.</p>
+        </div>
+    </div>
+</section>
+
+
 </body>
+
 </html>
