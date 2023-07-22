@@ -31,10 +31,20 @@ public class User {
     @NotEmpty
     private String password;
 
-//    @ManyToMany(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
-//    @JoinTable(
-//            name = "user_role"
-//            {joinsColumns=(@JoinColumn(name="User_ID"),referencedColumnName="ID"})
-//    )
-//    private List<Role>roles;
+
+    @ManyToMany (cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "user_role",
+            joinColumns = {@JoinColumn (name = "USER_ID", referencedColumnName = "ID"}),
+                    inverseJoinColumns = {@JoinColumn (name = "ROLE_ID", referencedColumnName = "ID")}
+    )
+    private List<Role> roles;
+    public User (User user) {
+        this.firstName = user.getFirstName();
+        this.lastName = user.getLastName();
+        this.email = user.getEmail();
+        this.password = user.getPassword();
+        this.roles = user.getRoles();
+    }
+    public User() {
 }
