@@ -1,7 +1,7 @@
 package com.example.chocoholic.controller;
 import com.example.chocoholic.dto.productDTO;
-import com.example.chocoholic.model.Category;
-import com.example.chocoholic.model.Product;
+import com.example.chocoholic.entity.Category;
+import com.example.chocoholic.entity.Product;
 import com.example.chocoholic.service.CategoryService;
 import com.example.chocoholic.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;

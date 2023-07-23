@@ -1,6 +1,6 @@
 package com.example.chocoholic.repository;
 
-import com.example.chocoholic.model.User;
+import com.example.chocoholic.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

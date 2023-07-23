@@ -1,7 +1,7 @@
 package com.example.chocoholic.service;
 
-import com.example.chocoholic.model.customUserDetail;
-import com.example.chocoholic.model.User;
+import com.example.chocoholic.entity.customUserDetail;
+import com.example.chocoholic.entity.User;
 import com.example.chocoholic.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

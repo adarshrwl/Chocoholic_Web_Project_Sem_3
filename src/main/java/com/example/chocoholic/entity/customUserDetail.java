@@ -1,4 +1,4 @@
-package com.example.chocoholic.model;
+package com.example.chocoholic.entity;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

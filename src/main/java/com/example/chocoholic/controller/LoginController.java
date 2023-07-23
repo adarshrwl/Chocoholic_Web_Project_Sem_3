@@ -1,14 +1,13 @@
 package com.example.chocoholic.controller;
 
-import com.example.chocoholic.model.Role;
-import com.example.chocoholic.model.User;
+import com.example.chocoholic.entity.Role;
+import com.example.chocoholic.entity.User;
 import com.example.chocoholic.repository.RoleRepository;
 import com.example.chocoholic.repository.UserRepository;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
