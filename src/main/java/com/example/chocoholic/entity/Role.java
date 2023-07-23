@@ -1,4 +1,4 @@
-package com.example.chocoholic.model;
+package com.example.chocoholic.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;

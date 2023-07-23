@@ -1,6 +1,6 @@
 package com.example.chocoholic.repository;
 
-import com.example.chocoholic.model.Product;
+import com.example.chocoholic.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

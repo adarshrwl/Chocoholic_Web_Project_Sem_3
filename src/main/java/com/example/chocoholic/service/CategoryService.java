@@ -1,6 +1,6 @@
 package com.example.chocoholic.service;
 
-import com.example.chocoholic.model.Category;
+import com.example.chocoholic.entity.Category;
 import com.example.chocoholic.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
