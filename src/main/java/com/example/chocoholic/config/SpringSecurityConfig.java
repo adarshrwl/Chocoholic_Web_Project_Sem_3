@@ -47,10 +47,6 @@ public class SpringSecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-    @Bean
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception{
-        auth.userDetailsService(customUserDetailService);
-    }
 
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer()
