@@ -2,6 +2,7 @@ package com.example.chocoholic.controller;
 
 import com.example.chocoholic.entity.Role;
 import com.example.chocoholic.entity.User;
+import com.example.chocoholic.global.GlobalData;
 import com.example.chocoholic.repository.RoleRepository;
 import com.example.chocoholic.repository.UserRepository;
 import jakarta.servlet.ServletException;
@@ -27,7 +28,9 @@ public class LoginController {
 
     @GetMapping("/login")
     public String login(){
+        GlobalData.cart.clear();
         return "login";
+
     }
 
     @GetMapping("/register")

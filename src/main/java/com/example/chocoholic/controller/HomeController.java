@@ -1,5 +1,6 @@
 package com.example.chocoholic.controller;
 
+import com.example.chocoholic.global.GlobalData;
 import com.example.chocoholic.service.CategoryService;
 import com.example.chocoholic.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,12 +19,14 @@ public class HomeController {
 
     @GetMapping({"/","/home"})
     public  String home(Model model){
+        model.addAttribute("cartCount", GlobalData.cart.size());
         return "index";
     }
     @GetMapping("/shop")
     public String shop(Model model) {
         model.addAttribute("category", categoryService.getAllCategory());
         model.addAttribute("product", productService.getAllProduct());
+        model.addAttribute("cartCount",GlobalData.cart.size());
         return "shop";
     }
 
@@ -31,12 +34,16 @@ public class HomeController {
     public String shopByCategory(Model model, @PathVariable int id) {
         model.addAttribute("category", categoryService.getAllCategory());
         model.addAttribute("product", productService.getAllProductsByCategory(id));
+        model.addAttribute("cartCount",GlobalData.cart.size());
         return "shop";
     }
     @GetMapping("/shop/viewProduct/{id}")
     public String viewProduct(Model model, @PathVariable int id) {
         model.addAttribute("product", productService.getProductById(id).get());
+        model.addAttribute("cartCount",GlobalData.cart.size());
         return "viewProduct";
     }
+
+
 
 }
