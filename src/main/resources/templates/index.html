@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 
 <head>
     <meta charset="UTF-8">
@@ -14,10 +15,18 @@
         <a href="/"><img th:src="@{/images/logo.png}" src="../static/images/logo.png"></a>
         <div class="nav-links">
             <ul>
-                <li><a href="#" th:href="@{/login}">Login/Register</a></li>
-                <li><a href="#">Buy Now</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li>
+                    <a href="#" th:href="@{/login}" sec:authorize="isAnonymous()">Login/Register</a>
+                </li>
+                <li>
+                    <a href="#" th:href="@{/logout}" sec:authorize="isAuthenticated()">Logout</a>
+                </li>
+                <li>
+                    <a href="#" th:href="@{/shop}">Buy Now</a>
+                </li>
+                <li>
+                    <a href="#" th:href="@{/cart}">Cart</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -26,11 +35,10 @@
             World's Best Chocolates
         </h1>
         <p>
-
             Unleash Your Chocoholic Obsession and Dive into a Cocoa Wonderland! Prepare to be Enchanted by Decadent
             Delights and Lost in a Chocolate Paradise,<br> Where Every Bite is Pure Bliss.
         </p>
-        <a href="#" class="hero-btn">Buy Now</a>
+        <a href="#" class="hero-btn" th:href="@{/shop}">Buy Now</a>
     </div>
 </section>
 
