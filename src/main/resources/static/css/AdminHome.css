@@ -44,7 +44,6 @@
     justify-content: center;
     align-items: center;
     height: 30vh;
-    background-color: #E9ECEF;
 }
 
 .welcome-box {
@@ -63,7 +62,6 @@
     justify-content: center;
     align-items: center;
     gap: 150px;
-    background-image: url(../images/contactus.jpg);
     background-size: cover;
     height: 60.7vh;
 }
@@ -102,4 +100,9 @@
     background-color: #ddd;
     border-radius: 5px;
     border: #333 2px solid;
+}
+
+.group{
+    background-image: url(../images/back.jpg);
+    background-size: cover;
 }
