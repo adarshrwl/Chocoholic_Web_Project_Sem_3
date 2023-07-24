@@ -16,10 +16,13 @@
         <a href="index.html"><img th:src="@{/images/logo.png}" src="../static/images/logo.png"></a>
         <div class="nav-links">
             <ul>
-                <li><a href="#">Login/Register</a></li>
-                <li><a href="">Buy Now</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="#" th:src="@{/login}" >Login/Register</a></li>
+                <li>
+                    <a href="#" th:href="@{/shop}">Buy Now</a>
+                </li>
+                <li>
+                    <a href="#" th:href="@{/cart}">Cart</a>
+                </li>
             </ul>
         </div>
     </nav>
