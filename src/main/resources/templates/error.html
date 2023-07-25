@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chocolate Error Page</title>
+    <link rel="stylesheet" type="text/css" href="error.css"  th:href="@{/css/error.css}">
+</head>
+
+<body>
+<div class="chocolate-background"></div>
+<div class="error-container">
+    <img src="../images/logo-final.png" alt="Chocolate Logo" th:src="@{/images/logo.png}">
+    <h1>Oops! Something went wrong.</h1>
+    <p>We're sorry, but it seems that you are not allowed to open the page.</p>
+    <button onclick="goBack()">Back</button>
+</div>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</body>
+
+</html>
