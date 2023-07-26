@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5e2c1; /* Light Brown */
+}
+
+nav {
+    background-color: #d2691e; /* Chocolate */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px; /* Rounded borders */
+    transition: background-color 0.3s ease;
+}
+
+.nav-item a:hover {
+    background-color: #b45309; /* Darker Chocolate */
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #a0522d; /* Brown */
+    background-color: #f5deb3; /* Wheat */
+    border-radius: 20px; /* Rounded borders */
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #8b4513; /* Saddle Brown */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #8b4513; /* Saddle Brown */
+    border-radius: 10px; /* Rounded borders */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #a0522d; /* Brown */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded borders */
+}
