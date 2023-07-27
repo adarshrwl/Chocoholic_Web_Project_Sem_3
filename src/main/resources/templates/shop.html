@@ -26,7 +26,7 @@
       </li>
       <li>
         <a class="nav-link" th:href="@{/cart}" href="#">Cart</a>
-        <span class="cart-count">0</span>
+        <span class="cart-count" th:text="${cartCount}">0</span>
       </li>
     </ul>
   </div>
