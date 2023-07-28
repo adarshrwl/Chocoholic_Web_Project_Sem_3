@@ -34,8 +34,6 @@ nav .logo {
 
 nav img {
     width: 60px;
-    border: solid black 2px;
-    border-radius: 15px ,;
 }
 
 .nav-links {
@@ -125,6 +123,8 @@ nav img {
 img {
     max-width: 100%;
     height: auto;
+    border: solid black 2px;
+    border-radius: 15px;
 }
 
 h2 {
