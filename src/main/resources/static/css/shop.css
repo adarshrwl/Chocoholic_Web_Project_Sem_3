@@ -20,7 +20,7 @@ header {
 
 nav {
     display: flex;
-    padding: 2% 6%;
+    padding: 1% 6%;
     align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/backone.jpg);
