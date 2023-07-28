@@ -155,10 +155,9 @@ ul {
 /* Container for the Product section */
 .Product {
     flex: 1;
-    display: inline;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex;
     margin-top: 20px;
+    flex-wrap: wrap
 }
 
 /* Styling for each product box */
@@ -171,6 +170,9 @@ ul {
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 10px;
+    max-width: 500px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
 }
 
 /* Styling for the image and text section within each product box */
@@ -222,4 +224,8 @@ ul {
 
 .button:hover {
     background-color: #1919d5;
+}
+
+.card-body{
+    padding-left: 10px;
 }
