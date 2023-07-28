@@ -118,6 +118,7 @@ ul {
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 100%;
+    border: solid black;
 }
 
 .Categories h4 {
@@ -170,9 +171,8 @@ ul {
 .Box {
     min-width: 500px;
     display: flex;
-    align-items: center;
     background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    border: 2px solid black;
     border-radius: 15px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -195,6 +195,7 @@ ul {
     object-fit: cover;
     border-radius: 15px;
     margin-right: 20px;
+    border: solid black;
 }
 
 /* Styling for the product description section */
