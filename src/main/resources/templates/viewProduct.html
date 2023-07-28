@@ -13,7 +13,7 @@
 
 <body>
 <nav>
-  <a href="index.html"><img src="../images/logo-final.png" th:src="@{/images/logo.png}"></a>
+  <a href=""><img src="../images/logo-final.png" th:src="@{/images/logo.png}"></a>
   <div class="nav-links">
     <ul>
       <li><a class="nav-link" th:href="@{/}" href="#">Home</a></li>
@@ -36,7 +36,7 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-sm-5 d-flex justify-content-center">
-      <img height="300px" width="300px" src="" th:src="@{${'/productImages/' + product.imageName}}" alt="">
+      <img class="image" height="300px" width="300px" src="" th:src="@{${'/productImages/' + product.imageName}}" alt="">
     </div>
     <div class="col-sm-7 mt-5">
       <h2 th:text="${product.name}">Product Name</h2>
