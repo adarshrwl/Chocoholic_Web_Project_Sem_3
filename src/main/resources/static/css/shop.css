@@ -3,7 +3,13 @@
     padding: 0;
     font-family: 'Roboto Slab', serif;
 }
-
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: rgba(85, 31, 31, 0.37);
+}
 header {
     min-height: 100vh;
     width: 100%;
@@ -108,7 +114,7 @@ ul {
     width: 300px;
     background-color: #f8f8f8;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 100%;
@@ -162,11 +168,12 @@ ul {
 
 /* Styling for each product box */
 .Box {
+    min-width: 500px;
     display: flex;
     align-items: center;
     background-color: #f8f8f8;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -186,7 +193,7 @@ ul {
     height: 150px;
     width: 150px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-right: 20px;
 }
 
@@ -203,7 +210,7 @@ ul {
 
 .Description h4 {
     font-size: 16px;
-    color: #f44336;
+    color: #000000;
 }
 
 .Description p {
@@ -215,17 +222,20 @@ ul {
 .button {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #1919d5;
+    background-color: #007bff;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s;
 }
 
-.button:hover {
-    background-color: #1919d5;
-}
+
 
 .card-body{
     padding-left: 10px;
+}
+.full{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
 }
